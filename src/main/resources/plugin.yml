@@ -1,0 +1,25 @@
+  name: 1.0.0_JYST_ECO
+  version: 1.0.0
+
+  main: ECO.ECO
+  api-version: '1.21'
+  load: POSTWORLD
+
+  commands:
+    balance:
+      description: Zeigt dir oder anderen ihren Kontostand an.
+      usage: /balance [spieler]
+
+    pay:
+      description: Überweise einem anderen Spieler Geld von deinem Konto.
+      usage: /pay [spieler] [betrag]
+
+    eco:
+      description: Admin-Befehl zur Verwaltung des Wirtschaftssystems.
+      usage: /eco [give/take/set] [spieler] [betrag]
+      permission: system.admin.economy
+      permission-message: §cDu darfst diesen Befehl nicht nutzen!
+
+    shop:
+      description: Öffnet den Markt.
+      usage: /shop
